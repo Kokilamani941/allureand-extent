@@ -113,6 +113,7 @@ public class Array_Stepdef {
 	@Then("user should b9e redirected to {string} page")
 	public void user_should_b9e_redirected_to_page(String string) {
 	    arrayPage.lnkArraysUlist_click();
+	    assertTrue(driver.getCurrentUrl().contains("122"));
 	}
 
 	//@TestSuit_Array_04
@@ -200,11 +201,12 @@ public class Array_Stepdef {
 		LOGGER.info("User clicked " + string + " link");
 	}
 
-//	@Then("user should be redirected to {string} page contains a question,an tryEditor with Run and Submit buttons")
-//	public void user_should_be_redirected_to_page_contains_a_question_an_try_editor_with_run_and_submit_buttons(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
+@Then("user should be redirected to {string} page contains a question,an tryEditor with Run and Submit buttons")
+	public void user_should_be_redirected_to_page_contains_a_question_an_try_editor_with_run_and_submit_buttons(String string) {
+	    // Write code here that turns the phrase above into concrete actions
 //	    throw new io.cucumber.java.PendingException();
 //	}
+}
 
 	@Then("user should be redirected to {string} page contains questions,an tryEditor  to write code with Run and Submit buttons")
 	public void user_should_be_redirected_to_page_contains_questions_an_try_editor_to_write_code_with_run_and_submit_buttons(String string) {
@@ -215,9 +217,9 @@ public class Array_Stepdef {
 		LOGGER.info("send text to editor print('dsalgo project test')");
 		ArrayList<ArrayList<String>> arrLL = objCommounUtils.readExcelData();
 		LOGGER.info("Arraylist count :" + String.valueOf(arrLL.size()));
-		arrayPage.txtCodeArea_senkeys(arrLL.get(1).get(0));
+		arrayPage.txtCodeArea_senkeys(arrLL.get(1).get(0000));
 		arrayPage.btnRun_click();
-		//assertTrue(driver.getCurrentUrl().contains("tryEditor"));
+	assertTrue(driver.getCurrentUrl().contains("tryEditor"));
 		//assertTrue(arrayPage.lblOutput_getText().contains("dsalgo project test"));		
 	}
 

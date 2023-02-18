@@ -14,14 +14,13 @@ When user clicks "Try Here" button in Arrays in Python page
 Then user should be redirected to a page having an tryEditor with a Run button to test
 
 @TestSuit_Array_03
-Scenario: navigate to Arrays using List from signin		
+Scenario: navigate to llll using List from signin		
 Given user is in  Array page after logged in
 When user clicks "Arrays using List" button
 Then user should b9e redirected to "arrays-using-list" page
 
 @TestSuit_Array_04
-Scenario: Open editor from Arrays using List page		
-Given user is in  Arrays using List page after logged in
+Scenario: Open editor froxxxxx Arrays using List page after logged in
 When user clicks "Try Here" button in Arrays using List page
 Then user should be redirected to a page having an tryEditor with a Run button to test
 

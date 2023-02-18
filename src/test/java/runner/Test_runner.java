@@ -11,8 +11,11 @@ import io.cucumber.junit.CucumberOptions;
 	glue="step_definitions",
 	dryRun=false,
 	monochrome=true,
-	//tags = "@TestSuit_Array_13",
-	plugin = { "pretty", "html:target/DsalgoXpathers.html" }
+			plugin = { "pretty", "html:target/DsalgoXpathers.html",
+					"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+					"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+
+}
 )
 public class Test_runner {
 
